@@ -1,5 +1,6 @@
-{ 
-  "season" : "winter",
+{
+  "season" : [
+    "winter",
   "mediaType" : [
     {
       "book" : [
@@ -180,6 +181,11 @@
         {
           "title" : "South Park: Bigger, Longer & Uncut"
         },
-        }
+      ]
+    }
   ]
+},
+    {
+      "mediaType" : "
+  ]  
 }
