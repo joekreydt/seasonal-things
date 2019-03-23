@@ -38,7 +38,7 @@
                   "title" : "Snow Country",
                   "author" : "Yasunari Kawabata"
                 }
-              ],
+              ]
             },
             {
               "film" : [
@@ -182,7 +182,7 @@
                 },
                 {
                   "title" : "South Park: Bigger, Longer & Uncut"
-                },
+                }
               ]
             }
           ]
@@ -214,8 +214,8 @@
                 {
                   "title" : "The Life Changing Magic of Tidying Up",
                   "author" : "Marie Kondo"
-                },
-              ],
+                }
+              ]
             },
             {
               "film" : [
@@ -232,31 +232,161 @@
                   "title" : "Nick and Norah's Infinite Playlist"
                 },
                 {
-                  "title" : "a"
+                  "title" : "Blue Valentine"
                 },
                 {
-                  "title" : "a"
+                  "title" : "Valentine's Day"
                 },
                 {
-                  "title" : "a"
+                  "title" : "Garden State"
                 },
                 {
-                  "title" : "a"
+                  "title" : "Under the Tuscan Sun"
                 },
                 {
-                  "title" : "a"
+                  "title" : "Midnight in Paris"
                 },
                 {
-                  "title" : "a"
+                  "title" : "Napoleon Dynamite"
                 },
                 {
-                  "title" : "a"
-                },
+                  "title" : "Paterson"
+                }
               ]
-            },
+            }
           ]
         }
       ]
-    },  
+    },
+    {
+      "summer" : [
+        {
+          "mediaType" : [
+            {
+              "book" : [
+                {
+                  "title" : "The Sun Also Rises",
+                  "author" : "Ernest Hemingway"
+                },
+                {
+                  "title" : "A Salty Piece of Land",
+                  "author" : "Jimmy Buffett"
+                }
+              ]
+            },
+            {
+              "film" : [
+                {
+                  "title" : "Love & Mercy"
+                },
+                {
+                  "title" : "Wedding Crashers"
+                },
+                {
+                  "title" : "Road House"
+                },
+                {
+                  "title" : "Mr Hobbs Takes a Vacation"
+                },
+                {
+                  "title" : "Flipper"
+                },
+                {
+                  "title" : "Fast & Furious (series)"
+                },
+                {
+                  "title" : "National Lampoon's Vacation"
+                },
+                {
+                  "title" : "Starsky & Hutch"
+                },
+                {
+                  "title" : "The Endless Summer"
+                },
+                {
+                  "title" : "Into the Blue"
+                },
+                {
+                  "title" : "Fool's Gold"
+                },
+                {
+                  "title" : "Rocket Power: Island of the Menehune"
+                },
+                {
+                  "title" : "The Wackness"
+                },
+                {
+                  "title" : "Jaws"
+                },
+                {
+                  "title" : "Begin Again"
+                },
+                {
+                  "title" : "The Hobbit: An Unexpected Journey"
+                },
+                {
+                  "title" : "A Good Year"
+                },
+                {
+                  "title" : "Moonrise Kingdom"
+                },
+                {
+                  "title" : "Papa Hemingway in Cuba"
+                },
+                {
+                  "title" : "Dragon"
+                },
+                {
+                  "title" : "The Big Boss"
+                },
+                {
+                  "title" : "The Life Aquatic with Steve Zissou"
+                },
+                {
+                  "title" : "Under the Tuscan Sun"
+                },
+                {
+                  "title" : "The Breakup"
+                },
+                {
+                  "title" : "Masterminds"
+                },
+                {
+                  "title" : "Chef"
+                },
+                {
+                  "title" : "Couples Retreat"
+                },
+                {
+                  "title" : "Waffle Street"
+                },
+                {
+                  "title" : "Paterson"
+                },
+                {
+                  "title" : "Eat Drink Man Woman"
+                },
+                {
+                  "title" : "Dirty Dancing"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "autumn" : [
+        {
+          "mediaType" : [
+            {
+              "book" : [
+                {
+                  "title": "Dracula",
+                  "author": "Bram Stoker"
+                },
+                {
+                  "title" : "The Witches of Eastwick",
+                  "author" : "John Updike"
   ]  
 }
