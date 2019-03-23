@@ -388,5 +388,122 @@
                 {
                   "title" : "The Witches of Eastwick",
                   "author" : "John Updike"
+                },
+                {
+                  "title" : "Staggerford",
+                  "author" : "Jon Hassler"
+                },
+                {
+                  "title" : "Dead Poets Society",
+                  "author" : "Nancy H Kleinbaum"
+                },
+                {
+                  "title" : "The October Country",
+                  "author" : "Ray Bradbury"
+                },
+                {
+                  "title" : "The Halloween Tree",
+                  "author" : "Ray Bradbury"
+                },
+                {
+                  "title" : "Something Wicked This Way Comes",
+                  "author" : "Ray Bradbury"
+                },
+                {
+                  "title" : "Silver Linings Playbook",
+                  "author" : "Matthew Quick"
+                },
+                {
+                  "title" : "It",
+                  "author" : "Stephen King"
+                },
+                {
+                  "title" : "Jane Eyre",
+                  "author" : "Charlotte Brontë"
+                },
+                {
+                  "title" : "The Gustav Sonata",
+                  "author" : "Rose Tremain"
+                },
+                {
+                  "title" : "Fahrenheit 451",
+                  "author" : "Ray Bradbury"
+                },
+                {
+                  "title" : "The Perks of Being a Wallflower",
+                  "author" : "Stephen Chbosky"
+                },
+                {
+                  "title" : "Snow Country",
+                  "author" : "Yasunari Kawabata"
+                }
+              ]
+            },
+            {
+              "movie" : [
+                {
+                  "title" : "The Karate Kid"
+                },
+                {
+                  "title" : "Dan in Real Life"
+                },
+                {
+                  "title" : "Road Trip"
+                },
+                {
+                  "title" : "Road House"
+                },
+                {
+                  "title" : "Big Daddy"
+                },
+                {
+                  "title" : "The Haunted Mansion"
+                },
+                {
+                  "title" : "Zombieland"
+                },
+                {
+                  "title" : "Ghostbusters"
+                },
+                {
+                  "title" : "Road"
+                },
+                {
+                  "title" : "Road"
+                },
+                {
+                  "title" : "Road"
+                },
+                {
+                  "title" : "Road"
+                },
+                {
+                  "title" : "Road"
+                },
+                {
+                  "title" : "Road"
+                },
+                {
+                  "title" : "Road"
+                },
+                {
+                  "title" : "Road"
+                },
+                {
+                  "title" : "Road"
+                },
+                {
+                  "title" : "Road"
+                },
+                {
+                  "title" : "Road"
+                },
+                {
+                  "title" : "Road"
+                },
+          ]
+        }
+      ]
+    } 
   ]  
 }
