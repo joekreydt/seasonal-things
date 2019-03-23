@@ -1,18 +1,42 @@
 { 
   "season" : "winter",
-  "mediaType" : "book",
-  "social_media" : [
+  "mediaType" : [
     {
-      "title" : "Misery",
-      "author" : "Stephen King"
-    },
-    {
-      "title" : "True Grit",
-      "author" : "Charles Portis"
-    },
-    {
-      "title" : "The Bear & the Nightingale",
-      "author" : ""
-    }
+    "book" : [
+      {
+        "title" : "Misery",
+        "author" : "Stephen King"
+      },
+      {
+        "title" : "True Grit",
+        "author" : "Charles Portis"
+      },
+      {
+        "title" : "The Bear and the Nightingale",
+        "author" : "Katherine Arden"
+      },
+      {
+        "title" : "Catcher in the Rye",
+        "author" : "JD Salinger"
+      },
+      {
+        "title" : "Snow Child",
+        "author" : "Eowyn Ivey"
+      },
+      {
+        "title" : "To the Bright Edge of the World",
+        "author" : "Eowyn Ivey"
+      },
+      {
+        "title" : "Brian's Winter",
+        "author" : "Gary Paulsen"
+      },
+      {
+        "title" : "Snow Country",
+        "author" : "Yasunari Kawabata"
+      }
+    ],
+    "film" : [
+      {
   ]
 }
