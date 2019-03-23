@@ -1,28 +1,18 @@
 { 
-  "seasons" : "fall",
-  "weathers" : ["normal", "cool", "rain", "thunder"]
-  "mediaType" : [ 
-    {
-      "description" : "work",
-      "URL" : "https://www.digitalocean.com/"
-    },
-    {
-      "desciption" : "tutorials",
-      "URL" : "https://www.digitalocean.com/community/tutorials"
-    }
-  ],
+  "season" : "winter",
+  "mediaType" : "book",
   "social_media" : [
     {
-      "description" : "twitter",
-      "link" : "https://twitter.com/digitalocean"
+      "title" : "Misery",
+      "author" : "Stephen King"
     },
     {
-      "description" : "facebook",
-      "link" : "https://www.facebook.com/DigitalOceanCloudHosting"
+      "title" : "True Grit",
+      "author" : "Charles Portis"
     },
     {
-      "description" : "github",
-      "link" : "https://github.com/digitalocean"
+      "title" : "The Bear & the Nightingale",
+      "author" : ""
     }
   ]
 }
