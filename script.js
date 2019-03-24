@@ -1,11 +1,11 @@
 var mediaJSON = `{
-  "season" : [
+  "season" : 
     {
-      "winter" : [
+      "winter" : 
         {
-          "mediaType" : [
+          "mediaType" : 
             {
-              "book" : [
+              "book" : 
                 {
                   "title" : "Misery",
                   "author" : "Stephen King"
@@ -38,10 +38,9 @@ var mediaJSON = `{
                   "title" : "Snow Country",
                   "author" : "Yasunari Kawabata"
                 }
-              ]
             },
             {
-              "film" : [
+              "film" :
                 {
                   "title" : "Reindeer Games"
                 },
@@ -183,18 +182,18 @@ var mediaJSON = `{
                 {
                   "title" : "South Park: Bigger, Longer & Uncut"
                 }
-              ]
+              
             }
-          ]
+          
         }
-      ]
+      
     },
     {
-      "spring" : [
+      "spring" : 
         {
-          "mediaType" : [
+          "mediaType" : 
             {
-              "book" : [
+              "book" : 
                 {
                   "title" : "1984",
                   "author" : "George Orwell"
@@ -215,10 +214,10 @@ var mediaJSON = `{
                   "title" : "The Life Changing Magic of Tidying Up",
                   "author" : "Marie Kondo"
                 }
-              ]
+              
             },
             {
-              "film" : [
+              "film" : 
                 {
                   "title" : "40 Days and 40 Nights"
                 },
@@ -252,18 +251,18 @@ var mediaJSON = `{
                 {
                   "title" : "Paterson"
                 }
-              ]
+              
             }
-          ]
+          
         }
-      ]
+      
     },
     {
-      "summer" : [
+      "summer" : 
         {
-          "mediaType" : [
+          "mediaType" : 
             {
-              "book" : [
+              "book" : 
                 {
                   "title" : "The Sun Also Rises",
                   "author" : "Ernest Hemingway"
@@ -272,10 +271,10 @@ var mediaJSON = `{
                   "title" : "A Salty Piece of Land",
                   "author" : "Jimmy Buffett"
                 }
-              ]
+              
             },
             {
-              "film" : [
+              "film" : 
                 {
                   "title" : "Love & Mercy"
                 },
@@ -369,18 +368,18 @@ var mediaJSON = `{
                 {
                   "title" : "Dirty Dancing"
                 }
-              ]
+              
             }
-          ]
+          
         }
-      ]
+      
     },
     {
-      "autumn" : [
+      "autumn" : 
         {
-          "mediaType" : [
+          "mediaType" : 
             {
-              "book" : [
+              "book" : 
                 {
                   "title": "Dracula",
                   "author": "Bram Stoker"
@@ -437,10 +436,10 @@ var mediaJSON = `{
                   "title" : "Snow Country",
                   "author" : "Yasunari Kawabata"
                 }
-              ]
+              
             },
             {
-              "movie" : [
+              "movie" : 
                 {
                   "title" : "The Karate Kid"
                 },
@@ -537,13 +536,12 @@ var mediaJSON = `{
                 {
                   "title" : "The Witches of Eastwick"
                 }
-              ]
+              
             }
-          ]
+          
         }
-      ]
-    } 
-  ]  
+      
+    }
 }`
 
 var mediaObject = JSON.parse(mediaJSON);
@@ -555,12 +553,12 @@ function generateList() {
   if (document.getElementById("winterCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
     console.log("Winter and Book are checked.");
     console.log(mediaObject.season);
-    console.log(mediaObject.season[0].winter[0].mediaType[0].book);
+    console.log(mediaObject.season.winter.mediaType.book);
     
     var winterBooksArray = mediaObject.season[0].winter[0].mediaType[0].book
     
     for (var x in winterBooksArray) {
-      consol
+      console.log(winterBooksArray[x].title + " by " + winterBooksArray[x].author);
     };
   };
 };
