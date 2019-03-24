@@ -531,6 +531,7 @@ function generateList() {
     console.log("Winter and Film are checked.");
     
     var winterFilmsArray = mediaObject.winter.film
+    var allWinterFilms
     
     for (var x in winterFilmsArray) {
       console.log(winterFilmsArray[x].title);
