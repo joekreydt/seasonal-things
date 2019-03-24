@@ -1,11 +1,33 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+  background-color: rgb(249, 245, 224);
+  color: rgb(63, 106, 175);
+  margin: 2rem;
+	font-size: 1 rem;
+  font-family: 'Fredoka One', cursive;
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+  color: rgb(229, 112, 91);
+  font-family: 'Molle', cursive;
+}
+
+input {
+	background-color: orange;
+  width: 7.5rem;
+  height: 2.3rem;
+  margin: .2rem;
+  font-size: 1rem;
+  font-family: 'Fredoka One', cursive;
+  border: 0px solid black;
+  position: relative;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 2px solid #936746;
+  -webkit-box-shadow: 2px 2px 0px 1px rgba(147,103,70,1);
+  -moz-box-shadow: 2px 2px 0px 1px rgba(147,103,70,1);
+  box-shadow: 2px 2px 0px 1px rgba(147,103,70,1);
+  color: rgb(147,103,70);
 }
