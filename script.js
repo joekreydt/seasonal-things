@@ -511,8 +511,9 @@ function generateList() {
       console.log(winterBooksArray[x].title + " by " + winterBooksArray[x].author);
     };
     
-    if (document.getElementById("showOne".checked == true) {
-      Math.floor(Math.random() * winterBooksArray.length);
+    if (document.getElementById("showOne").checked == true) {
+      var randomNumber = Math.floor(Math.random() * winterBooksArray.length);
+      console.log(randomNumber);
     };
     
     // Winter Films
