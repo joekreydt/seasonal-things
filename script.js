@@ -1,4 +1,4 @@
-var media = `{
+var mediaJSON = `{
   "season" : [
     {
       "winter" : [
@@ -546,14 +546,15 @@ var media = `{
   ]  
 }`
 
-
+var mediaObject = JSON.parse(mediaJSON);
 
 function generateList() {
   console.log("Button clicked!");
-  console.log(mediaJSON);
+  console.log(mediaObject);
   
   if (document.getElementById("winterCheckbox").checked == true) {
     console.log("Winter is checked.");
-    console.log(mediaJSON[0]);
+    console.log(mediaObject.season);
+    console.log(mediaObject.season[0][0]);
   };
 };
