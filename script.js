@@ -557,7 +557,7 @@ function generateList() {
       var string1 = "";
       for (x in media) {
         string1 += media[x]
-        if (x['season'] == "winter") {
+        if (media[x] == "winter") {
           console.log("it's doing something");
         } else {
           console.log("beh, hamburg");
