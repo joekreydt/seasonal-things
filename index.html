@@ -16,7 +16,10 @@
   </head>  
   <body>
     <h1>SettingsDB</h1>
-
+    
+    <table id="optionsTable">
+    
+    <tr>
     <h2>
       Pick a Season:
     </h2>
@@ -30,8 +33,16 @@
       <input type="radio" id="fallCheckbox" name="seasonCheckbox" >
       <label for="fallCheckbox">Fall</label>
     </div>
-    
-    <br><br>
+    <td rowspan="4">
+    <h2>
+      Results:
+    </h2>
+    <div id="resultsDiv">
+      <p id="resultsP"></p>
+    </div>
+    </td>
+    </tr>
+    <tr>
     <h2>
       Pick a Media Type:
     </h2>
@@ -41,8 +52,8 @@
       <input type="radio" id="filmCheckbox" name="mediaTypeCheckbox" checked>
       <label for="filmCheckbox">Film</label>
     </div>
-    
-    <br><br>
+    </tr>
+    <tr>
     <h2>
       Additional Options:
     </h2>
@@ -52,18 +63,16 @@
       <input type="radio" id="showAll" name="additionalOptionsCheckbox">
       <label for="showAll">Show All</label>
     </div>
-    
-    <br><br>
+    </tr>
+    <tr>
     <div>
-      <input id="type="button" onclick="generateList()" value="Go">
+      <input id="goButton" type="button" onclick="generateList()" value="Go">
     </div>
+    </tr>
+    <tr>
     
-    <br><br>
-    <h2>
-      Results:
-    </h2>
-    <div id="resultsDiv">
-      <p id="resultsP"></p>
-    </div>
+    </tr>
+    </table>
+    
   </body>
 </html>

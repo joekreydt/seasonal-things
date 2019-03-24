@@ -4,16 +4,17 @@ body {
   background-color: rgb(249, 245, 224);
   color: rgb(63, 106, 175);
   margin: 2rem;
-	font-size: 1 rem;
+	font-size: 1rem;
   font-family: 'Fredoka One', cursive;
 }
 
 h1 {
   color: rgb(229, 112, 91);
   font-family: 'Molle', cursive;
+  font-size: 3rem;
 }
 
-input {
+#goButton {
 	background-color: orange;
   width: 7.5rem;
   height: 2.3rem;
