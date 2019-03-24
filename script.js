@@ -549,10 +549,8 @@ var mediaJSON = `{
 var mediaObject = JSON.parse(mediaJSON);
 
 function generateList() {
-  console.log("Button clicked!");
-  console.log(mediaObject);
-  
-  /*
+
+  // Winter Books
   if (document.getElementById("winterCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
     console.log("Winter and Book are checked.");
     
@@ -561,10 +559,23 @@ function generateList() {
     for (var x in winterBooksArray) {
       console.log(winterBooksArray[x].title + " by " + winterBooksArray[x].author);
     };
-  };
-  */
-  for (var i = 0, i <= 1, i++) {
-    document.getElementById("winterCheckbox").checked == true {
     
+    // Winter Films
+  } else if (document.getElementById("winterCheckbox").checked == true && document.getElementById("filmCheckbox").checked == true) {
+    console.log("Winter and Film are checked.");
+    
+    var winterFilmsArray = mediaObject.season[0].winter[0].mediaType[1].film
+    
+    for (var x in winterFilmsArray) {
+      console.log(winterFilmsArray[x].title);
+    };
+  } else if (document.getElementById("springCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
+    console.log("Spring and Book are checked.");
+    
+    var springBooksArray = mediaObject.season[1].spring[0].mediaType[0].book
+    
+    for (var x in springBooksArray) {
+      console.log(springBooksArray[x].title + " by " + springBooksArray[x].author);
+    };
   };
 };
