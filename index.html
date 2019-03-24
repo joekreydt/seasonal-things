@@ -19,14 +19,14 @@
       Pick a Season:
     </h2>
     <div>
-      <input type="checkbox" class="seasons" name="seasons" unchecked>
-      <label for="seasons">Winter</label>
-      <input type="checkbox" class="seasons" name="seasons" unchecked>
-      <label for="seasons">Spring</label>
-      <input type="checkbox" class="seasons" name="seasons" unchecked>
-      <label for="seasons">Summer</label>
-      <input type="checkbox" class="seasons" name="seasons" unchecked>
-      <label for="seasons">Fall</label>
+      <input type="checkbox" id="winterCheckbox" name="winterCheckbox" unchecked>
+      <label for="winterCheckbox">Winter</label>
+      <input type="checkbox" id="springCheckbox" name="springCheckbox" unchecked>
+      <label for="springCheckbox">Spring</label>
+      <input type="checkbox" id="summerCheckbox" name="summerCheckbox" unchecked>
+      <label for="summerCheckbox">Summer</label>
+      <input type="checkbox" id="fallCheckbox" name="fallCheckbox" unchecked>
+      <label for="fallCheckbox">Fall</label>
     </div>
     
     <br><hr><br>
@@ -34,10 +34,10 @@
       Pick a Media Type:
     </h2>
     <div>
-      <input type="checkbox" class="mediaTypes" name="mediaTypes" unchecked>
-      <label for="mediaTypes">Book</label>
-      <input type="checkbox" class="mediaTypes" name="mediaTypes" unchecked>
-      <label for="mediaTypes">Film</label>
+      <input type="checkbox" id="bookCheckbox" name="bookCheckbox" unchecked>
+      <label for="bookCheckbox">Book</label>
+      <input type="checkbox" id="filmCheckbox" name="filmCheckbox" unchecked>
+      <label for="filmCheckbox">Film</label>
     </div>
     
     <br><hr><br>
@@ -45,10 +45,10 @@
       Additional Options:
     </h2>
     <div>
-      <input type="checkbox" class="options" name="options" unchecked>
-      <label for="options">Show one, randomly picked movie based on your criteria.</label>
-      <input type="checkbox" class="options" name="options" unchecked>
-      <label for="options">Show all movies based on your criteria.</label>
+      <input type="radio" id="showOne" name="showOne" checked>
+      <label for="showOne">Show one, randomly picked movie based on your criteria.</label>
+      <input type="radio" id="showAll" name="showAll">
+      <label for="showAll">Show all movies based on your criteria.</label>
     </div>
     
     <br><hr><br>
