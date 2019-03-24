@@ -553,10 +553,11 @@ function generateList() {
   
   if (document.getElementById("winterCheckbox").checked == true) {
     console.log("Winter is checked.");
-      var mediaList = JSON.parse(media);
       var x;
-      for (x in mediaList['season']) { 
-        ;
+      var string1 = "";
+      for (x in media) {
+        string1 += media[x]
       };
+    console.log(string1);
   };
 };
