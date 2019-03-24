@@ -527,6 +527,20 @@ var mediaObject = JSON.parse(mediaJSON);
 
 function generateList() {
 
+  if (document.getElementById("winterCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
+    console.log("Winter and Book are checked.");
+    
+    //var winterBooksArray = mediaObject['winter']
+    //console.log(winterBooksArray);
+    console.log(mediaObject['winter);
+    
+    //for (var x in winterBooksArray) {
+    //  console.log(winterBooksArray[x].title + " by " + winterBooksArray[x].author);
+    //};
+    
+    // Winter Films
+  };
+  /*
   // Winter Books
   if (document.getElementById("winterCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
     console.log("Winter and Book are checked.");
@@ -571,7 +585,7 @@ function generateList() {
   } else if (document.getElementById("summerCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
     console.log("Summer and Book are checked.");
     
-    var summerBooksArray = mediaObject.season[2].summer[0].mediaType[0].book
+    var summerBooksArray = mediaObject.summer.book
     
     for (var x in summerBooksArray) {
       console.log(summerBooksArray[x].title + " by " + summerBooksArray[x].author);
@@ -581,10 +595,11 @@ function generateList() {
   } else if (document.getElementById("summerCheckbox").checked == true && document.getElementById("filmCheckbox").checked == true) {
     console.log("Summer and Film are checked.");
     
-    var summerFilmsArray = mediaObject.season[2].summer[0].mediaType[1].film
+    var summerFilmsArray = mediaObject.summer.film
     
     for (var x in summerFilmsArray) {
       console.log(summerFilmsArray[x].title);
     };
   };
+  */
 };
