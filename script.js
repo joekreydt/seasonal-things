@@ -498,12 +498,14 @@ var mediaJSON = `{
 
 var mediaObject = JSON.parse(mediaJSON);
 
-function randomNumberForArray(sortedArrayOfMedia) {
-  var randomNumberWB = Math.floor(Math.random() * sortedArrayOfMedia.length);
-  return(randomNumberForArray);
-};
+
 
 function generateList() {
+  
+  function randomNumberForArray(sortedArrayOfMedia) {
+    var randomNumber = Math.floor(Math.random() * sortedArrayOfMedia.length);
+    return(randomNumber);
+  };
   
   /*************** Winter Books ***************/
   if (document.getElementById("winterCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
@@ -517,6 +519,7 @@ function generateList() {
         
     if (document.getElementById("showOne").checked == true) {
       var randomNumber = randomNumberForArray(winterBooksArray);
+      console.log(randomNumber);
       document.getElementById("resultsDiv").innerHTML = allWinterBooks[randomNumber];
       
     } else {
