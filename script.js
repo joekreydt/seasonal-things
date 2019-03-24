@@ -514,15 +514,16 @@ function generateList() {
     };
     
     console.log(allWinterBooks);
-    document.getElementById("resultsDiv").innerHTML = allWinterBooks;
     
     if (document.getElementById("showOne").checked == true) {
       var randomNumberWB = Math.floor(1 + Math.random() * winterBooksArray.length);
       console.log(randomNumberWB);
+      document.getElementById("resultsDiv").innerHTML = allWinterBooks[randomNumberWB];
       
     } else {
       var randomNumberWB = 0;
       console.log(randomNumberWB);
+      document.getElementById("resultsDiv").innerHTML = allWinterBooks;
     };
     
     /*************** Winter Films ***************/
