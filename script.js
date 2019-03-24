@@ -501,7 +501,7 @@ var mediaObject = JSON.parse(mediaJSON);
 function generateList() {
   console.log(mediaObject);
 
-  // Winter Books
+  /*************** Winter Books ***************/
   if (document.getElementById("winterCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
     console.log("Winter and Book are checked.");
     
@@ -509,6 +509,8 @@ function generateList() {
     
     for (var x in winterBooksArray) {
       console.log(winterBooksArray[x].title + " by " + winterBooksArray[x].author);
+      var allWinterBooks = [];
+      allWinterBooks.push(winterBooksArray[x].title + " by " + winterBooksArray[x].
     };
     
     if (document.getElementById("showOne").checked == true) {
@@ -516,7 +518,7 @@ function generateList() {
       console.log(randomNumberWB);
     };
     
-    // Winter Films
+    /*************** Winter Films ***************/
   } else if (document.getElementById("winterCheckbox").checked == true && document.getElementById("filmCheckbox").checked == true) {
     console.log("Winter and Film are checked.");
     
@@ -531,7 +533,7 @@ function generateList() {
       console.log(randomNumberWF);
     };
     
-    //Spring Books
+    /*************** Spring Books ***************/
   } else if (document.getElementById("springCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
     console.log("Spring and Book are checked.");
     
@@ -546,7 +548,7 @@ function generateList() {
       console.log(randomNumberSB);
     };
     
-    // Spring Films
+    /*************** Spring Films ***************/
   } else if (document.getElementById("springCheckbox").checked == true && document.getElementById("filmCheckbox").checked == true) {
     console.log("Spring and Film are checked.");
     
@@ -561,7 +563,7 @@ function generateList() {
       console.log(randomNumberSF);
     };
     
-    // Summer Books
+    /*************** Summer Books ***************/
   } else if (document.getElementById("summerCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
     console.log("Summer and Book are checked.");
     
@@ -576,7 +578,7 @@ function generateList() {
       console.log(randomNumberSuB);
     };
     
-    // Summer Films
+    /*************** Summer Films ***************/
   } else if (document.getElementById("summerCheckbox").checked == true && document.getElementById("filmCheckbox").checked == true) {
     console.log("Summer and Film are checked.");
     
@@ -591,7 +593,7 @@ function generateList() {
       console.log(randomNumberSuF);
     };
     
-    // Fall Books
+    /*************** Fall Books ***************/
   } else if (document.getElementById("fallCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
     console.log("Fall and Book are checked.");
     
@@ -606,7 +608,7 @@ function generateList() {
       console.log(randomNumberFB);
     };
     
-    // Fall Films
+    /*************** Fall Films ***************/
   } else if (document.getElementById("fallCheckbox").checked == true && document.getElementById("filmCheckbox").checked == true) {
     console.log("Fall and Film are checked.");
     
