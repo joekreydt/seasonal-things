@@ -552,9 +552,15 @@ function generateList() {
   console.log("Button clicked!");
   console.log(mediaObject);
   
-  if (document.getElementById("winterCheckbox").checked == true) {
-    console.log("Winter is checked.");
+  if (document.getElementById("winterCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
+    console.log("Winter and Book are checked.");
     console.log(mediaObject.season);
-    console.log(mediaObject.season[0][0]);
+    console.log(mediaObject.season[0].winter[0].mediaType[0].book);
+    
+    var winterBooksArray = mediaObject.season[0].winter[0].mediaType[0].book
+    
+    for (var x in winterBooksArray) {
+      consol
+    };
   };
 };
