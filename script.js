@@ -510,11 +510,14 @@ function generateList() {
     for (var x in winterBooksArray) {
       console.log(winterBooksArray[x].title + " by " + winterBooksArray[x].author);
       var allWinterBooks = [];
-      allWinterBooks.push(winterBooksArray[x].title + " by " + winterBooksArray[x].
+      allWinterBooks.push(winterBooksArray[x].title + " by " + winterBooksArray[x].author);
     };
     
     if (document.getElementById("showOne").checked == true) {
-      var randomNumberWB = Math.floor(Math.random() * winterBooksArray.length);
+      var randomNumberWB = Math.floor(1 + Math.random() * winterBooksArray.length);
+      console.log(randomNumberWB);
+    } else {
+      var randomNumberWB = 0;
       console.log(randomNumberWB);
     };
     
@@ -529,7 +532,10 @@ function generateList() {
     };
     
     if (document.getElementById("showOne").checked == true) {
-      var randomNumberWF = Math.floor(Math.random() * winterFilmsArray.length);
+      var randomNumberWF = Math.floor(1 + Math.random() * winterFilmsArray.length);
+      console.log(randomNumberWF);
+    } else {
+      var randomNumberWF = 0;
       console.log(randomNumberWF);
     };
     
@@ -544,7 +550,10 @@ function generateList() {
     };
     
     if (document.getElementById("showOne").checked == true) {
-      var randomNumberSB = Math.floor(Math.random() * springBooksArray.length);
+      var randomNumberSB = Math.floor(1 + Math.random() * springBooksArray.length);
+      console.log(randomNumberSB);
+    } else {
+      var randomNumberSB = 0;
       console.log(randomNumberSB);
     };
     
@@ -559,7 +568,10 @@ function generateList() {
     };
     
     if (document.getElementById("showOne").checked == true) {
-      var randomNumberSF = Math.floor(Math.random() * springFilmsArray.length);
+      var randomNumberSF = Math.floor(1 + Math.random() * springFilmsArray.length);
+      console.log(randomNumberSF);
+    } else {
+      var randomNumberSF = 0;
       console.log(randomNumberSF);
     };
     
@@ -574,8 +586,11 @@ function generateList() {
     };
     
     if (document.getElementById("showOne").checked == true) {
-      var randomNumberSuB = Math.floor(Math.random() * summerBooksArray.length);
+      var randomNumberSuB = Math.floor(1 + Math.random() * summerBooksArray.length);
       console.log(randomNumberSuB);
+    } else {
+      var randomNumberSuB = 0;
+      console.log(randomNumberWB);
     };
     
     /*************** Summer Films ***************/
@@ -589,7 +604,7 @@ function generateList() {
     };
     
     if (document.getElementById("showOne").checked == true) {
-      var randomNumberSuF = Math.floor(Math.random() * summerFilmsArray.length);
+      var randomNumberSuF = Math.floor(1 + Math.random() * summerFilmsArray.length);
       console.log(randomNumberSuF);
     };
     
@@ -604,7 +619,7 @@ function generateList() {
     };
     
     if (document.getElementById("showOne").checked == true) {
-      var randomNumberFB = Math.floor(Math.random() * fallBooksArray.length);
+      var randomNumberFB = Math.floor(1 + Math.random() * fallBooksArray.length);
       console.log(randomNumberFB);
     };
     
@@ -619,7 +634,7 @@ function generateList() {
     };
     
     if (document.getElementById("showOne").checked == true) {
-      var randomNumberFF = Math.floor(Math.random() * fallFilmsArray.length);
+      var randomNumberFF = Math.floor(1 + Math.random() * fallFilmsArray.length);
       console.log(randomNumberFF);
     };
   };
