@@ -506,16 +506,19 @@ function generateList() {
     console.log("Winter and Book are checked.");
     
     var winterBooksArray = mediaObject.winter.book
+    var allWinterBooks = [];
     
     for (var x in winterBooksArray) {
       console.log(winterBooksArray[x].title + " by " + winterBooksArray[x].author);
-      var allWinterBooks = [];
       allWinterBooks.push(winterBooksArray[x].title + " by " + winterBooksArray[x].author);
     };
+    
+    console.log(allWinterBooks);
     
     if (document.getElementById("showOne").checked == true) {
       var randomNumberWB = Math.floor(1 + Math.random() * winterBooksArray.length);
       console.log(randomNumberWB);
+      
     } else {
       var randomNumberWB = 0;
       console.log(randomNumberWB);
@@ -590,7 +593,7 @@ function generateList() {
       console.log(randomNumberSuB);
     } else {
       var randomNumberSuB = 0;
-      console.log(randomNumberWB);
+      console.log(randomNumberSuB);
     };
     
     /*************** Summer Films ***************/
@@ -605,6 +608,9 @@ function generateList() {
     
     if (document.getElementById("showOne").checked == true) {
       var randomNumberSuF = Math.floor(1 + Math.random() * summerFilmsArray.length);
+      console.log(randomNumberSuF);
+    } else {
+      var randomNumberSuF = 0;
       console.log(randomNumberSuF);
     };
     
@@ -621,6 +627,9 @@ function generateList() {
     if (document.getElementById("showOne").checked == true) {
       var randomNumberFB = Math.floor(1 + Math.random() * fallBooksArray.length);
       console.log(randomNumberFB);
+    } else {
+      var randomNumberFB = 0;
+      console.log(randomNumberFB);
     };
     
     /*************** Fall Films ***************/
@@ -635,6 +644,9 @@ function generateList() {
     
     if (document.getElementById("showOne").checked == true) {
       var randomNumberFF = Math.floor(1 + Math.random() * fallFilmsArray.length);
+      console.log(randomNumberFF);
+    } else {
+      var randomNumberFF = 0;
       console.log(randomNumberFF);
     };
   };
