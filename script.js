@@ -510,7 +510,7 @@ function generateList() {
   /*************** Winter Books ***************/
   if (document.getElementById("winterCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
     
-    var winterBooksArray = mediaObject.winter.book
+    var winterBooksArray = mediaObject.winter.book;
     var allWinterBooks = [];
     
     for (var x in winterBooksArray) {
@@ -529,7 +529,7 @@ function generateList() {
   } else if (document.getElementById("winterCheckbox").checked == true && document.getElementById("filmCheckbox").checked == true) {
     console.log("Winter and Film are checked.");
     
-    var winterFilmsArray = mediaObject.winter.film
+    var winterFilmsArray = mediaObject.winter.film;
     var allWinterFilms = [];
     
     for (var x in winterFilmsArray) {
@@ -547,7 +547,7 @@ function generateList() {
   } else if (document.getElementById("springCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
     console.log("Spring and Book are checked.");
     
-    var springBooksArray = mediaObject.spring.book
+    var springBooksArray = mediaObject.spring.book;
     var allSpringBooks = [];
     
     for (var x in springBooksArray) {
@@ -565,11 +565,11 @@ function generateList() {
   } else if (document.getElementById("springCheckbox").checked == true && document.getElementById("filmCheckbox").checked == true) {
     console.log("Spring and Film are checked.");
     
-    var springFilmsArray = mediaObject.spring.film
+    var springFilmsArray = mediaObject.spring.film;
     var allSpringFilms = [];
     
     for (var x in springFilmsArray) {
-      allSpringFilms.push(springBooksArray[x].title);
+      allSpringFilms.push(springFilmsArray[x].title);
     };
     
     if (document.getElementById("showOne").checked == true) {
@@ -583,36 +583,36 @@ function generateList() {
   } else if (document.getElementById("summerCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
     console.log("Summer and Book are checked.");
     
-    var summerBooksArray = mediaObject.summer.book
+    var summerBooksArray = mediaObject.summer.book;
+    var allSummerBooks = [];
     
     for (var x in summerBooksArray) {
-      console.log(summerBooksArray[x].title + " by " + summerBooksArray[x].author);
+      allSummerBooks.push(summerBooksArray[x].title + " by " + summerBooksArray[x].author);
     };
     
     if (document.getElementById("showOne").checked == true) {
-      var randomNumberSuB = Math.floor(1 + Math.random() * summerBooksArray.length);
-      console.log(randomNumberSuB);
+      randomNumber = randomNumberForArray(summerBooksArray);
+      document.getElementById("resultsDiv").innerHTML = allSummerBooks[randomNumber];
     } else {
-      var randomNumberSuB = 0;
-      console.log(randomNumberSuB);
+        document.getElementById("resultsDiv").innerHTML = allSummerBooks;
     };
     
     /*************** Summer Films ***************/
   } else if (document.getElementById("summerCheckbox").checked == true && document.getElementById("filmCheckbox").checked == true) {
     console.log("Summer and Film are checked.");
     
-    var summerFilmsArray = mediaObject.summer.film
-    
+    var summerFilmsArray = mediaObject.summer.film;
+    var allSummerFilms = [];
+ 
     for (var x in summerFilmsArray) {
-      console.log(summerFilmsArray[x].title);
+      allSummerFilms.push(summerFilmsArray[x].title);
     };
     
     if (document.getElementById("showOne").checked == true) {
-      var randomNumberSuF = Math.floor(1 + Math.random() * summerFilmsArray.length);
-      console.log(randomNumberSuF);
+      randomNumber = randomNumberForArray(summerFilmsArray);
+      document.getElementById("resultsDiv").innerHTML = allSummerFilms[randomNumber];
     } else {
-      var randomNumberSuF = 0;
-      console.log(randomNumberSuF);
+        document.getElementById("resultsDiv").innerHTML = allSummerFilms;
     };
     
     /*************** Fall Books ***************/
@@ -620,17 +620,17 @@ function generateList() {
     console.log("Fall and Book are checked.");
     
     var fallBooksArray = mediaObject.fall.book
+    var allFallBooks = [];
     
     for (var x in fallBooksArray) {
-      console.log(fallBooksArray[x].title + " by " + fallBooksArray[x].author);
+      allFallBooks.push(fallBooksArray[x].title + " by " + fallBooksArray[x].author);
     };
     
     if (document.getElementById("showOne").checked == true) {
-      var randomNumberFB = Math.floor(1 + Math.random() * fallBooksArray.length);
-      console.log(randomNumberFB);
+      randomNumber = randomNumberForArray(fallBooksArray);
+      document.getElementById("resultsDiv").innerHTML = allFallBooks[randomNumber];
     } else {
-      var randomNumberFB = 0;
-      console.log(randomNumberFB);
+        document.getElementById("resultsDiv").innerHTML = allFallBooks;
     };
     
     /*************** Fall Films ***************/
@@ -638,20 +638,17 @@ function generateList() {
     console.log("Fall and Film are checked.");
     
     var fallFilmsArray = mediaObject.fall.film
+    var allFallFilms = [];
     
     for (var x in fallFilmsArray) {
-      console.log(fallFilmsArray[x].title);
+      allFallFilms.push(fallFilmsArray[x].title);
     };
     
     if (document.getElementById("showOne").checked == true) {
-      var randomNumberFF = Math.floor(1 + Math.random() * fallFilmsArray.length);
-      console.log(randomNumberFF);
+      randomNumber = randomNumberForArray(fallFilmsArray);
+      document.getElementById("resultsDiv").innerHTML = allFallFilms[randomNumber];
     } else {
-      var randomNumberFF = 0;
-      console.log(randomNumberFF);
+        document.getElementById("resultsDiv").innerHTML = allFallFilms;
     };
   };
-  
-  
-  
 };
