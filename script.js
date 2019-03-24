@@ -499,30 +499,22 @@ var mediaJSON = `{
 var mediaObject = JSON.parse(mediaJSON);
 
 function generateList() {
-  console.log(mediaObject);
-
+  
   /*************** Winter Books ***************/
   if (document.getElementById("winterCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
-    console.log("Winter and Book are checked.");
     
     var winterBooksArray = mediaObject.winter.book
     var allWinterBooks = [];
     
     for (var x in winterBooksArray) {
-      console.log(winterBooksArray[x].title + " by " + winterBooksArray[x].author);
       allWinterBooks.push(winterBooksArray[x].title + " by " + winterBooksArray[x].author);
     };
-    
-    console.log(allWinterBooks);
-    
+        
     if (document.getElementById("showOne").checked == true) {
-      var randomNumberWB = Math.floor(1 + Math.random() * winterBooksArray.length);
-      console.log(randomNumberWB);
+      var randomNumberWB = Math.floor(Math.random() * winterBooksArray.length);
       document.getElementById("resultsDiv").innerHTML = allWinterBooks[randomNumberWB];
       
     } else {
-      var randomNumberWB = 0;
-      console.log(randomNumberWB);
       document.getElementById("resultsDiv").innerHTML = allWinterBooks;
     };
     
