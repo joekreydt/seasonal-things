@@ -48,14 +48,27 @@ td {
   text-align: left;
 }
 
-th {
+#seasonOptionTable td {
+  min-width: 30rem;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+#seasonOptionTable th {
   background-color: rgb(63, 106, 175);
   color: rgb(249, 245, 224);
-  border: 2px solid rgb(63, 106, 175);
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
 }
 
 #seasonOptionTable {
   border: 2px solid rgb(63, 106, 175);
-  border-collapse: collapse;
-  padding: 
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
 }
