@@ -34,22 +34,8 @@ h1 {
 }
 
 input {
-  background-color: orange;
-  width: 7.5rem;
-  height: 2.3rem;
-  margin: 2rem;
-  margin-left: 0rem;
-  font-size: 1rem;
-  font-family: 'Fredoka One', cursive;
-  position: relative;
-  border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border: 2px solid #936746;
-  -webkit-box-shadow: 2px 2px 0px 1px rgba(147,103,70,1);
-  -moz-box-shadow: 2px 2px 0px 1px rgba(147,103,70,1);
-  box-shadow: 2px 2px 0px 1px rgba(147,103,70,1);
-  color: rgb(147,103,70);
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 tr {
@@ -60,4 +46,16 @@ td {
   min-width: 30rem;
   vertical-align: top;
   text-align: left;
+}
+
+th {
+  background-color: rgb(63, 106, 175);
+  color: rgb(249, 245, 224);
+  border: 2px solid rgb(63, 106, 175);
+}
+
+#seasonOptionTable {
+  border: 2px solid rgb(63, 106, 175);
+  border-collapse: collapse;
+  padding: 
 }
