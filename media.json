@@ -34,9 +34,7 @@
           "title" : "Snow Country",
           "author" : "Yasunari Kawabata"
         }
-      ]
-    },
-    {
+      ],
       "film" : [
         {
           "title" : "Reindeer Games"
@@ -182,7 +180,6 @@
       ]
     }
   },
-  {
     "spring" :
       {
         "book" : [
@@ -206,9 +203,7 @@
             "title" : "The Life Changing Magic of Tidying Up",
             "author" : "Marie Kondo"
           }
-        ]
-      },
-      {
+        ],
         "film" : [
           {
             "title" : "40 Days and 40 Nights"
@@ -258,9 +253,7 @@
             "title" : "A Salty Piece of Land",
             "author" : "Jimmy Buffett"
           }
-        ]
-      },
-      {
+        ],
         "film" : [
           {
             "title" : "Love & Mercy"
@@ -418,9 +411,7 @@
             "title" : "Snow Country",
             "author" : "Yasunari Kawabata"
           }
-        ]
-      },
-      {
+        ],
         "movie" : [
           {
             "title" : "The Karate Kid"

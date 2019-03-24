@@ -34,9 +34,7 @@ var mediaJSON = `{
           "title" : "Snow Country",
           "author" : "Yasunari Kawabata"
         }
-      ]
-    },
-    {
+      ],
       "film" : [
         {
           "title" : "Reindeer Games"
@@ -206,9 +204,7 @@ var mediaJSON = `{
             "title" : "The Life Changing Magic of Tidying Up",
             "author" : "Marie Kondo"
           }
-        ]
-      },
-      {
+        ],
         "film" : [
           {
             "title" : "40 Days and 40 Nights"
@@ -258,9 +254,7 @@ var mediaJSON = `{
             "title" : "A Salty Piece of Land",
             "author" : "Jimmy Buffett"
           }
-        ]
-      },
-      {
+        ],
         "film" : [
           {
             "title" : "Love & Mercy"
@@ -418,9 +412,7 @@ var mediaJSON = `{
             "title" : "Snow Country",
             "author" : "Yasunari Kawabata"
           }
-        ]
-      },
-      {
+        ],
         "movie" : [
           {
             "title" : "The Karate Kid"
@@ -526,6 +518,7 @@ var mediaJSON = `{
 var mediaObject = JSON.parse(mediaJSON);
 
 function generateList() {
+  console.log(mediaObject);
 
   if (document.getElementById("winterCheckbox").checked == true && document.getElementById("bookCheckbox").checked == true) {
     console.log("Winter and Book are checked.");
