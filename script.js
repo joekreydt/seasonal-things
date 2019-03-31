@@ -35,7 +35,6 @@ var mediaJSON = `{
 		],
 		"film": [{
 				"title": "Reindeer Games"
-        "imdbID" : "tt0184858"
 			},
 			{
 				"title": "The Bourne Identity"
@@ -231,10 +230,7 @@ var mediaJSON = `{
 			},
 			{
 				"title": "Paterson"
-			},
-      {
-        "title": "Empire Records"
-      }
+			}
 		]
 	},
 	"summer": {
