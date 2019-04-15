@@ -173,7 +173,10 @@ var mediaJSON = `{
 			},
 			{
 				"title": "South Park: Bigger, Longer & Uncut"
-			}
+			},
+      {
+        "title": "To All the Boys I've Loved Before"
+      }
 		]
 	},
 	"spring": {
@@ -494,6 +497,12 @@ var mediaJSON = `{
 			},
 			{
 				"title": "The Witches of Eastwick"
+			}
+			{
+				"title": "To All the Boys I've Loved Before"
+			}
+			{
+				"title": "Class Rank"
 			}
 		]
 	}
