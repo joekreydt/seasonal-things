@@ -497,10 +497,10 @@ var mediaJSON = `{
 			},
 			{
 				"title": "The Witches of Eastwick"
-			}
+			},
 			{
 				"title": "To All the Boys I've Loved Before"
-			}
+			},
 			{
 				"title": "Class Rank"
 			}
