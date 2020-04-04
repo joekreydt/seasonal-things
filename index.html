@@ -2,22 +2,20 @@
 <html lang="en">
 
 <head>
-  <title>SettingsDB</title>
+  <title>Seasonal Things</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- import the webpage's stylesheet -->
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Molle:400i" rel="stylesheet">
 
-  <!-- import the webpage's javascript file -->
   <script src="./script.js" defer></script>
 </head>
 
 <body>
-  <h1>SettingsDB</h1>
+  <h1>Seasonal Things</h1>
 
   <table id="optionsTable">
 
@@ -59,35 +57,54 @@
     </tr>
     <tr>
       <td>
-        <h2>
-          Pick a Media Type:
-        </h2>
-        <div>
-          <input type="radio" id="bookCheckbox" name="mediaTypeCheckbox">
-          <label for="bookCheckbox">Book</label>
-          <input type="radio" id="filmCheckbox" name="mediaTypeCheckbox" checked>
-          <label for="filmCheckbox">Film</label>
-        </div>
+        <table id="seasonOptionTable">
+          <tr>
+            <th>
+              <h2>
+                Pick a Media Type:
+              </h2>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <input type="radio" id="bookCheckbox" name="mediaTypeCheckbox">
+                <label for="bookCheckbox">Book</label>
+                <input type="radio" id="filmCheckbox" name="mediaTypeCheckbox" checked>
+                <label for="filmCheckbox">Film</label>
+              </div>
+            </td>
+          </tr>
+        </table>
       </td>
     </tr>
 
     <tr>
       <td>
-        <h2>
-          Additional Options:
-        </h2>
-        <div>
-          <input type="radio" id="showOne" name="additionalOptionsCheckbox" checked>
-          <label for="showOne">Show One</label>
-          <input type="radio" id="showAll" name="additionalOptionsCheckbox">
-          <label for="showAll">Show All</label>
-        </div>
+        <table id="seasonOptionTable">
+          <tr>
+            <th>
+              <h2>
+                Additional Options:
+              </h2>
+            </th>
+          </tr>
+          <tr>
+            <td>
+          <div>
+            <input type="radio" id="showOne" name="additionalOptionsCheckbox" checked>
+            <label for="showOne">Show One</label>
+            <input type="radio" id="showAll" name="additionalOptionsCheckbox">
+            <label for="showAll">Show All</label>
+          </div>
+        </td>
+        </tr>
+        </table>
       </td>
     </tr>
     <tr>
       <td>
         <div>
-          <!--<input id="goButton" type="button" onclick="generateList()" value="Go">Go</input>-->
           <button id="goButton" onClick="generateList()">Go</button>
         </div>
       </td>
