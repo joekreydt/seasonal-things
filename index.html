@@ -1,95 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>SettingsDB</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Molle:400i" rel="stylesheet">
-    
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>  
-  <body>
-    <h1>SettingsDB</h1>
-    
-    <table id="optionsTable">
-    
+
+<head>
+  <title>SettingsDB</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Molle:400i" rel="stylesheet">
+
+  <!-- import the webpage's javascript file -->
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <h1>SettingsDB</h1>
+
+  <table id="optionsTable">
+
     <tr>
-    <td>
-    <table id="seasonOptionTable">
-    <tr>
-    <th>
-    <h2>
-      Pick a Season:
-    </h2>
-    </th>
+      <td>
+        <table id="seasonOptionTable">
+          <tr>
+            <th>
+              <h2>
+                Pick a Season:
+              </h2>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <input type="radio" id="winterCheckbox" name="seasonCheckbox">
+                <label for="winterCheckbox">Winter</label>
+                <input type="radio" id="springCheckbox" name="seasonCheckbox">
+                <label for="springCheckbox">Spring</label>
+                <br>
+                <input type="radio" id="summerCheckbox" name="seasonCheckbox" checked>
+                <label for="summerCheckbox">Summer</label>
+                <input type="radio" id="fallCheckbox" name="seasonCheckbox">
+                <label for="fallCheckbox">Fall</label>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="4">
+        <h2>
+          Results:
+        </h2>
+        <div id="resultsDiv">
+          <p id="resultsP"></p>
+        </div>
+      </td>
     </tr>
     <tr>
-    <td>
-    <div>
-      <input type="radio" id="winterCheckbox" name="seasonCheckbox" >
-      <label for="winterCheckbox">Winter</label>
-      <input type="radio" id="springCheckbox" name="seasonCheckbox" >
-      <label for="springCheckbox">Spring</label>
-      <br>
-      <input type="radio" id="summerCheckbox" name="seasonCheckbox" checked>
-      <label for="summerCheckbox">Summer</label>
-      <input type="radio" id="fallCheckbox" name="seasonCheckbox" >
-      <label for="fallCheckbox">Fall</label>
-    </div>
-    </td>
+      <td>
+        <h2>
+          Pick a Media Type:
+        </h2>
+        <div>
+          <input type="radio" id="bookCheckbox" name="mediaTypeCheckbox">
+          <label for="bookCheckbox">Book</label>
+          <input type="radio" id="filmCheckbox" name="mediaTypeCheckbox" checked>
+          <label for="filmCheckbox">Film</label>
+        </div>
+      </td>
     </tr>
-    </table>
-    </td>
-    <td rowspan="4">
-    <h2>
-      Results:
-    </h2>
-    <div id="resultsDiv">
-      <p id="resultsP"></p>
-    </div>
-    </td>
+
+    <tr>
+      <td>
+        <h2>
+          Additional Options:
+        </h2>
+        <div>
+          <input type="radio" id="showOne" name="additionalOptionsCheckbox" checked>
+          <label for="showOne">Show One</label>
+          <input type="radio" id="showAll" name="additionalOptionsCheckbox">
+          <label for="showAll">Show All</label>
+        </div>
+      </td>
     </tr>
     <tr>
-    <td>
-    <h2>
-      Pick a Media Type:
-    </h2>
-    <div>
-      <input type="radio" id="bookCheckbox" name="mediaTypeCheckbox" >
-      <label for="bookCheckbox">Book</label>
-      <input type="radio" id="filmCheckbox" name="mediaTypeCheckbox" checked>
-      <label for="filmCheckbox">Film</label>
-    </div>
-    </td>
+      <td>
+        <div>
+          <input id="goButton" type="button" onclick="generateList()" value="Go">
+        </div>
+      </td>
     </tr>
-      
-    <tr>
-    <td>
-    <h2>
-      Additional Options:
-    </h2>
-    <div>
-      <input type="radio" id="showOne" name="additionalOptionsCheckbox" checked>
-      <label for="showOne">Show One</label>
-      <input type="radio" id="showAll" name="additionalOptionsCheckbox">
-      <label for="showAll">Show All</label>
-    </div>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <div>
-      <input id="goButton" type="button" onclick="generateList()" value="Go">
-    </div>
-    </td>
-    </tr>
-    </table>
-    
-  </body>
+  </table>
+
+</body>
+
 </html>
